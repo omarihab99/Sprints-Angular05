@@ -1,0 +1,32 @@
+$margin-top-bottom: 10px;
+$margin-right-left: 20%;
+$padding-top-bottom: 10px;
+$padding-right: 10px;
+$border-radius: 10px;
+$border-width: 1px;
+$border-color: black;
+
+.add-group{
+    margin: $margin-top-bottom $margin-right-left;
+    padding: $padding-top-bottom $padding-right;
+    border-radius: $border-radius;
+    border: $border-width solid $border-color;
+}
+.search-group{
+    margin: $margin-top-bottom $margin-right-left;
+    padding: $padding-top-bottom $padding-right;
+    border-radius: $border-radius;
+    border: $border-width solid $border-color;
+}
+.edit-group{
+    margin: $margin-top-bottom $margin-right-left;
+    padding: $padding-top-bottom $padding-right;
+    border-radius: $border-radius;
+    border: $border-width solid $border-color;
+}
+.delete-group{
+    margin: $margin-top-bottom $margin-right-left;
+    padding: $padding-top-bottom $padding-right;
+    border-radius: $border-radius;
+    border: $border-width solid $border-color;
+}

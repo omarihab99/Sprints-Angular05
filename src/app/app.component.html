@@ -1,0 +1,34 @@
+<div class="add-group">
+  <label for="name">Contact Name:</label>
+  <input type="text" #name />
+  <label for="number">Contact Number:</label>
+  <input type="number" #number />
+  <button (click)="addContact(name.value, +number.value)">Add</button>
+</div>
+<div class="edit-group">
+  <label for="name">Contact name to edit:</label>
+  <input type="text" #nameEdit />
+  <label for="">New Contact Name</label>
+  <input type="text" #newName />
+  <label for="">New Contact Number</label>
+  <input type="number" #newNumber />
+  <button (click)="editContact(nameEdit.value, {name: newName.value, number: +newNumber.value})">Edit</button>
+</div>
+<div class="delete-group">
+  <label for="name">Contact Name:</label>
+  <input type="text" #name />
+  <button (click)="deleteContact(name.value)">Delete</button>
+</div>
+<div class="search-group">
+  <label for="">Name to search</label>
+  <input type="text" #search />
+  <button (click)="getContactsByName(search.value)">Search</button>
+</div>
+
+<section>
+  <ul>
+    <app-contacts *ngFor="let contact of contacts" [contact]="contact">
+    </app-contacts>
+  </ul>
+</section>
+<router-outlet></router-outlet>
